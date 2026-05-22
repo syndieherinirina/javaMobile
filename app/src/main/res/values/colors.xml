@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
-    <color name="blue">#2196F3</color>
+    <color name="blue">#7C3AED</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="background">#FBFAFF</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_alt">#F1EAFF</color>
+    <color name="text_primary">#111111</color>
+    <color name="text_secondary">#4B465C</color>
+    <color name="primary">#7C3AED</color>
+    <color name="primary_dark">#4C1D95</color>
+    <color name="success">#7C3AED</color>
+    <color name="danger">#111111</color>
+    <color name="disabled">#D8CCF5</color>
+    <color name="border">#C4B5FD</color>
 </resources>

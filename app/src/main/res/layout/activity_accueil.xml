@@ -1,31 +1,163 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="24dp">
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Bienvenue !"
-        android:textSize="32sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="16dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Vous etes connecte avec succes."
-        android:textSize="16sp"
-        android:layout_marginBottom="32dp" />
-
-    <Button
-        android:id="@+id/btnRetour"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Retour a la connexion" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-</LinearLayout>
+        <!-- Header Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:paddingBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bienvenue"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_primary"
+                android:layout_marginBottom="12dp" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="4dp"
+                android:background="@color/primary"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vous etes connecte avec succes"
+                android:textSize="16sp"
+                android:textColor="@color/text_secondary" />
+        </LinearLayout>
+
+        <!-- Email Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:tag="card"
+            android:padding="24dp"
+            android:layout_marginBottom="28dp"
+            android:elevation="2dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Informations du Compte"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="12sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="test@exemple.com"
+                android:textSize="17sp"
+                android:textColor="@color/text_primary"
+                android:textStyle="bold"
+                android:padding="12dp"
+                android:tag="input"
+                android:background="@drawable/edit_text_background" />
+
+            <TextView
+                android:id="@+id/tvConnexion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connecte a --:--:--"
+                android:textSize="15sp"
+                android:textColor="@color/text_secondary"
+                android:padding="12dp"
+                android:layout_marginTop="12dp"
+                android:tag="input"
+                android:background="@drawable/edit_text_background" />
+        </LinearLayout>
+
+        <!-- Actions Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Actions"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Buttons Container -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Button -->
+            <Button
+                android:id="@+id/btnProfile"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Consulter Profil"
+                android:background="@drawable/button_primary"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnParametres"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Parametres"
+                android:background="@drawable/button_dark"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:textStyle="bold" />
+
+            <!-- Activity Button -->
+            <Button
+                android:id="@+id/btnCount"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Compte : 0"
+                android:background="@drawable/button_light"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginBottom="14dp"
+                android:textStyle="bold" />
+
+            <!-- Logout Button -->
+            <Button
+                android:id="@+id/btnDeconnexion"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Deconnexion"
+                android:background="@drawable/button_dark"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

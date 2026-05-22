@@ -1,0 +1,98 @@
+UNIVERSITÉ DE VAKINANKARATRA
+Matière : Programmation Mobile
+Niveau : Licence 3 (L3)
+Enseignant : ANDRIAMIRADO Tohaina Tsaroana
+SUJET D’EXERCICES
+EXERCICE 1 : AFFICHAGE DE L’HEURE DE
+CONNEXION
+Objectif
+Transmettre et afficher les informations de connexion de l’utilisateur.
+Consignes
+1. Enregistrer l’heure actuelle après un login réussi au format :
+HH:MM:SS
+2. Transmettre cette heure vers AccueilActivity à l’aide d’un Intent .
+3. Afficher sur l’écran d’accueil le message suivant :
+Connecté à 14:35:22
+4. Ajouter également la date complète au format :
+JJ/MM/AAAA
+5. L’affichage doit être clair et bien organisé sur l’écran d’accueil.
+1/5EXERCICE 2 : CRÉATION DE L’ÉCRAN PROFIL
+Objectif
+Créer un écran permettant d’afficher les informations utilisateur.
+Consignes
+1. Créer une activité nommée ProfilActivity .
+2. Créer l’interface XML correspondante.
+3. Déclarer l’activité dans le fichier AndroidManifest.xml .
+4. Afficher les informations suivantes :
+l’email de l’utilisateur
+la date de première connexion
+la dernière connexion
+5. Ajouter un bouton « Retour » permettant de revenir vers l’écran d’accueil.
+6. Utiliser SharedPreferences pour sauvegarder la date de première connexion.
+EXERCICE 3 : DÉCONNEXION AVEC CONFIRMATION
+Objectif
+Sécuriser la déconnexion de l’utilisateur.
+Consignes
+1. Ajouter un bouton « Déconnexion ».
+2. Afficher un AlertDialog lors du clic sur ce bouton.
+3. Le message affiché doit être :
+Voulez-vous vraiment vous déconnecter ?
+4. Ajouter deux boutons :
+OUI
+NON
+5. Si l’utilisateur clique sur OUI :
+2/5revenir vers MainActivity
+effacer le mot de passe
+6. Si l’utilisateur clique sur NON :
+fermer la boîte de dialogue
+rester sur la page actuelle
+7. L’option « Se souvenir de moi » ne doit pas être supprimée.
+EXERCICE 4 : GESTION DE LA DERNIÈRE VISITE DU
+PROFIL
+Objectif
+Suivre les visites effectuées sur le profil utilisateur.
+Consignes
+1. Afficher le message suivant dans le profil :
+Dernière visite du profil : [date/heure]
+2. Mettre à jour automatiquement cette valeur à chaque ouverture du profil.
+3. Sauvegarder les informations avec SharedPreferences .
+4. Afficher également :
+Nombre de visites du profil : X
+5. Le compteur doit augmenter automatiquement après chaque visite du profil.
+3/5EXERCICE 5 : ÉCRAN PARAMÈTRES – THÈME CLAIR
+/ SOMBRE
+Objectif
+Créer un système simple de personnalisation de thème.
+Consignes
+1. Créer une activité nommée ParametresActivity .
+2. Ajouter un bouton « Paramètres » depuis l’écran d’accueil.
+3. Ajouter deux boutons :
+Thème clair
+Thème sombre
+4. Fonctionnement attendu :
+Thème clair
+fond blanc
+texte noir
+Thème sombre
+fond noir
+texte blanc
+5. Sauvegarder le thème choisi avec SharedPreferences .
+6. Le thème doit être appliqué sur tous les écrans de l’application.
+7. Le thème doit rester actif après le redémarrage de l’application.
+EXERCICE 6 : MODIFICATION DE L’EMAIL
+UTILISATEUR
+Objectif
+Permettre la modification des informations utilisateur.
+Consignes
+1. Ajouter dans ProfilActivity :
+un EditText
+4/5un bouton « Changer mon email »
+2. Vérifier que le champ n’est pas vide.
+3. Vérifier que l’email contient :
+@
+.
+4. Sauvegarder le nouvel email avec SharedPreferences .
+5. Réutiliser automatiquement ce nouvel email lors du prochain login.
+6. Afficher le message suivant :
+Email mis à jour
+5/5

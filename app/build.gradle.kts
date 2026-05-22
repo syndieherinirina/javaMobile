@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    compileSdk = 35
+    compileSdk = 34
     namespace = "com.example.demoapp"
 
     defaultConfig {
@@ -18,7 +18,7 @@ android {
         release {
             isMinifyEnabled = false
             proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
+               getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
         }

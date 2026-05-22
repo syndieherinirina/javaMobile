@@ -15,7 +15,17 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".AccueilActivity" android:exported="true" />
+        <activity
+            android:name=".AccueilActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ProfilActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".ParametresActivity"
+            android:exported="true" />
 
     </application>
 
